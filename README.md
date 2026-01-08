@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🍽️ Sistema Web para Gestão de Restaurantes
 
-First, run the development server:
+## 📌 Visão Geral
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este projeto consiste no desenvolvimento de um **sistema web para gestão de restaurantes**, permitindo o cadastro e gerenciamento de restaurantes, cardápios, horários de funcionamento, pedidos e relatórios de vendas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação utiliza uma **API REST desenvolvida do zero**, com separação entre backend e frontend, visando organização, escalabilidade e facilidade de manutenção.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+### Backend
+- **Node.js**
+- **Express.js**
+- **API REST**
+- **MySQL** (Banco de Dados Relacional)
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
+- **React**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗️ Arquitetura do Sistema
 
-## Deploy on Vercel
+O sistema é estruturado em três camadas principais:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Frontend (Web)**  
+   Interface do usuário desenvolvida em React, responsável por consumir a API e exibir os dados.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Backend (API REST)**  
+   Desenvolvido em Node.js com Express, responsável pelas regras de negócio, autenticação, validação de dados e integração com o banco de dados.
+
+3. **Banco de Dados (MySQL)**  
+   Responsável pelo armazenamento persistente das informações do sistema.
+
+---
+
+## 🔐 Funcionalidades
+
+### 🔑 Autenticação
+- Login de usuário
+- Criação de conta
+- Recuperação de senha
+- Proteção de rotas da API
+
+### 🏪 Cadastro de Restaurantes e Cardápio (CRUD)
+- Cadastro de restaurantes
+- Edição e remoção de restaurantes
+- Cadastro de menu/cardápio
+- Atualização e exclusão de itens do cardápio
+
+### ⏰ Cadastro de Horário de Funcionamento
+- Definição de dias da semana
+- Horário de abertura
+- Horário de fechamento
+
+### 🧾 Cadastro de Pedidos
+- Criação de pedidos
+- Associação de itens do cardápio
+- Registro de valores
+- Controle de status do pedido
+
+### 📊 Relatório de Vendas
+- Total de vendas por período
+- Quantidade de pedidos
+- Valores arrecadados
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Aplicar na prática conceitos de **Desenvolvimento Web**, **APIs REST**, **Node.js com Express**, **Bancos de Dados Relacionais** e **React**, simulando um sistema real de gestão de restaurantes.
+
+---
+
+## 🚀 Possíveis Evoluções Futuras
+- Integração com sistemas de pagamento
+- Dashboard administrativo
+- Aplicativo mobile
+- Sistema de notificações
